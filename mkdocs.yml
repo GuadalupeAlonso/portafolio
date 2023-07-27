@@ -1,0 +1,31 @@
+# Information:
+site_name: Portafolio
+site_author: Guadalupe Alonso Contreras
+
+# GitHub:
+repo_url: https://github.com/GuadalupeAlonso/portafolio.git
+
+# Copyright
+copyright: >- #salto de linea
+  &copy; 2023 Guadalupe Alonso
+  
+# Configuración de la página:
+theme: 
+  name: material
+  features:
+    - navigation.footer
+  language: es
+  # Color palette configuration
+  palette:
+    - scheme: default
+      primary: blue grey #teal indigo
+      accent: blue grey
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      primary: blue grey
+      accent: blue grey
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
