@@ -13,8 +13,22 @@ copyright: >- #salto de linea
 theme: 
   name: material
   features:
-    - navigation.footer      # Botones de navegacion en el footer
-    - navigation.tabs        # Cambia la navegacion por pestañas
+    - content.code.copy        # Añade el simbolo de copiar
+    - content.code.annotate    # Permite añadir signo (+) en comentarios del código # (1)
+    - content.tabs.link        # Cambian los code tabs juntos
+    - navigation.footer        # Botones de navegacion en el footer
+    - navigation.indexes       # Habilitar index para carpetas
+    - navigation.sections      # Despliega las secciones en negritas
+    - navigation.tabs          # Cambia la navegacion por pestañas
+    - navigation.tabs.sticky   # Navegacion por pestañas permanente
+#    - navigation.expand        # Expande las secciones, desactivar tabs
+    - navigation.top           # Anade boton para subir rapido
+    - navigation.tracking      # Modifica el URL dependiendo de la seccion
+    - search.suggest           # Sugerencias del buscador
+    - search.highlight         # Resaltar la palabra buscada
+#    - search.share            # Boton de compartir en busqueda
+    - toc.follow               # Autoscroll table of contents
+# Idioma
   language: es
   # Color palette configuration
   palette:
@@ -44,3 +58,35 @@ extra:
   analytics:
     provider: google
     property: G-2KEX0VP823
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/heart
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/heart-broken
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+markdown_extensions:
+# Mermaid configuration
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+# Anotaciones
+  - attr_list 
+  - md_in_html
+  - pymdownx.superfences
+# Admonitions
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+
+
