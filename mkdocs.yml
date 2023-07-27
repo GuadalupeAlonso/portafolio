@@ -13,7 +13,8 @@ copyright: >- #salto de linea
 theme: 
   name: material
   features:
-    - navigation.footer
+    - navigation.footer      # Botones de navegacion en el footer
+    - navigation.tabs        # Cambia la navegacion por pestañas
   language: es
   # Color palette configuration
   palette:
@@ -29,3 +30,17 @@ theme:
       toggle:
         icon: material/weather-sunny
         name: Switch to light mode
+
+# Extras
+extra:
+# Footer configuration
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/GuadalupeAlonso
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/guadalupe-alonso-b099811ab/
+      
+# Google analitycs
+  analytics:
+    provider: google
+    property: G-2KEX0VP823
